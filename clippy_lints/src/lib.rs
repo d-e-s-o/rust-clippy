@@ -40,7 +40,7 @@ macro_rules! declare_clippy_lint {
         declare_tool_lint! { pub clippy::$name, Warn, $description, report_in_external_macro: true }
     };
     { pub $name:tt, correctness, $description:tt } => {
-        declare_tool_lint! { pub clippy::$name, Deny, $description, report_in_external_macro: true }
+        declare_tool_lint! { pub clippy::$name, Warn, $description, report_in_external_macro: true }
     };
     { pub $name:tt, complexity, $description:tt } => {
         declare_tool_lint! { pub clippy::$name, Warn, $description, report_in_external_macro: true }
