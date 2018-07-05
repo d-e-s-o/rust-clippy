@@ -37,7 +37,7 @@ macro_rules! declare_clippy_lint {
         declare_lint! { pub $name, Warn, $description }
     };
     { pub $name:tt, correctness, $description:tt } => {
-        declare_lint! { pub $name, Deny, $description }
+        declare_lint! { pub $name, Warn, $description }
     };
     { pub $name:tt, complexity, $description:tt } => {
         declare_lint! { pub $name, Warn, $description }
