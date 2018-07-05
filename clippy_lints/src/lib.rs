@@ -21,7 +21,7 @@ macro_rules! declare_clippy_lint {
         declare_lint! { pub $name, Warn, $description, report_in_external_macro: true }
     };
     { pub $name:tt, correctness, $description:tt } => {
-        declare_lint! { pub $name, Deny, $description, report_in_external_macro: true }
+        declare_lint! { pub $name, Warn, $description, report_in_external_macro: true }
     };
     { pub $name:tt, complexity, $description:tt } => {
         declare_lint! { pub $name, Warn, $description, report_in_external_macro: true }
